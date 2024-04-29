@@ -1,0 +1,108 @@
+{
+    "Profile": "Hồ sơ",
+    "Logout": "Đăng xuất",
+    "Login": "Đăng nhập",
+    "List": "Tất cả danh mục",
+    "sold": "Đã bán",
+    "footer": {
+        "copyright": "© 2024 Shopee. Tất cả các quyền được bảo lưu.",
+        "countryRegion": "Quốc gia & Khu vực: Singapore Indonesia Thái Lan Malaysia Việt Nam Philippines Brazil México Colombia Chile Đài Loan",
+        "companyName": "Công ty TNHH Shopee",
+        "address": "Địa chỉ: Viet Name",
+        "contentManager": "Chịu Trách Nhiệm Quản Lý Nội Dung: Duc Anh Mai",
+        "rightsReserved": "© 2015 - Bản quyền thuộc về Công ty TNHH Shop"
+    },
+    "profile": {
+        "My Account": "Tài khoản của tôi",
+        "Change Password": "Đổi mật khẩu",
+        "Purchase Orders": "Đơn mua",
+        "My profile": "Hồ Sơ Của Tôi.",
+        "Detail": "Quản lý thông tin hồ sơ để bảo mật tài khoản",
+        "Name": "Tên",
+        "PhoneNumber": "Số điện thoại",
+        "Address": "Địa chỉ",
+        "Save": "Lưu"
+    },
+    "tophead": {
+        "sort_by": "Sắp xếp theo",
+        "popular": "Phổ biến",
+        "newest": "Mới nhất",
+        "best_selling": "Bán chạy nhất",
+        "price": "Giá",
+        "price_low_to_high": "Giá: Thấp đến cao",
+        "price_high_to_low": "Giá: Cao đến thấp",
+        "search-product": "Tìm kiếm sản phẩm"
+    },
+    "aside": {
+        "price_max": "Giá cao nhất",
+        "price_min": "Giá thấp nhất",
+        "price": "Giá",
+        "apply": "Áp dụng",
+        "search": "Tìm kiếm"
+    },
+    "password": {
+        "oldpassword": ""
+    },
+    "changePass": {
+        "changePassword": "Đổi mật khẩu",
+        "manageProfile": "Quản lý thông tin hồ sơ để bảo mật tài khoản",
+        "oldPassword": "Mật khẩu cũ",
+        "oldPasswordRequired": "Mật khẩu cũ là bắt buộc",
+        "newPassword": "Mật khẩu mới",
+        "newPasswordRequired": "Mật khẩu mới là bắt buộc",
+        "newPasswordMinLength": "Mật khẩu mới phải có ít nhất 8 ký tự",
+        "confirmPassword": "Nhập lại mật khẩu",
+        "confirmPasswordRequired": "Xác nhận mật khẩu là bắt buộc",
+        "passwordsDoNotMatch": "Mật khẩu xác nhận không khớp",
+        "save": "Lưu",
+        "passwordUpdatedSuccessfully": "Cập nhật mật khẩu thành công",
+        "incorrectOldPassword": "Mật khẩu cũ bạn nhập không chính xác.",
+        "errorChangingPassword": "Lỗi khi thay đổi mật khẩu: "
+    },
+    "category": {
+        "clothes": "Quần áo",
+        "electronics": "Điện tử",
+        "furniture": "Đồ nội thất",
+        "shoes": "Giày dép",
+        "miscellaneous": "Linh tinh",
+        "foods": "Thực phẩm"
+    },
+    "detailP": {
+        "description": "Mô tả sản phẩm",
+        "addToCart": "Thêm vào giỏ hàng",
+        "buyNow": "Mua ngay",
+        "amount": "138 sản phẩm có sẵn",
+        "Amount": "Số lượng",
+        "login": "Hãy đâng nhập để thêm sản phẩm vào giỏ hàng!",
+        "setAmount": "Không thể thêm quá 138 sản phẩm vào giỏ hàng."
+    },
+    "cart": {
+        "select_all": "Chọn tất cả",
+        "delete": "Xóa",
+        "total_payment": "Tổng thanh toán",
+        "products": "sản phẩm",
+        "buy": "Mua hàng",
+        "unit_price": "Đơn giá",
+        "quantity": "Số lượng",
+        "amount": "Số lượng",
+        "action": "Thao Tác",
+        "product": "Sản phẩm"
+    },
+    "sell": {
+        "sellerChannel": "Kênh người bán",
+        "becomeASeller": "Trở thành Người bán Shopee",
+        "downloadApp": "Tải ứng dụng",
+        "connect": "Kết nối"
+    },
+    "app": {
+        "healthProtection": "Bảo vệ sức khỏe",
+        "cheapStuff": "Gì Cũng Rẻ - Mua Là Freeship",
+        "saleTimeFrame": "Khung Giờ Săn Sale",
+        "freeDelivery": "Miễn Phí Vận Chuyển",
+        "cashback": "Hoàn Xu 20% - Lên Đến 50K",
+        "brandDiscount": "Hàng Hiệu -50%",
+        "internationalItems": "Hàng Quốc Tế",
+        "serviceCardTopup": "Nạp Thẻ Dịch Vụ",
+        "shockingDeal": "Deal Sốc Từ 1K"
+    }
+}

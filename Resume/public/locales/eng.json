@@ -1,0 +1,105 @@
+{
+    "Profile": "Profile",
+    "Logout": "Logout",
+    "Login": "Login",
+    "List": "List",
+    "sold": "Sold",
+    "footer": {
+        "copyright": "© 2024 Shopee. All rights reserved.",
+        "countryRegion": "Country & Region: Singapore Indonesia Thailand Malaysia Vietnam Philippines Brazil Mexico Colombia Chile Taiwan",
+        "companyName": "Shopee Co., Ltd.",
+        "address": "Address: Viet Name",
+        "contentManager": "Content Management Responsibility: Duc Anh Mai",
+        "rightsReserved": "© 2015 - All rights reserved by Shopee Co., Ltd."
+    },
+    "profile": {
+        "My Account": "My account",
+        "Change Password": "Change Password",
+        "Purchase Orders": "Purchase Orders",
+        "My profile": "My profile",
+        "Detail": "Manage profile information for account security",
+        "Name": "Name",
+        "PhoneNumber": "Phone number",
+        "Address": "Address",
+        "Save": "Save"
+    },
+    "tophead": {
+        "sort_by": "Sort by",
+        "popular": "Popular",
+        "newest": "Newest",
+        "best_selling": "Best Selling",
+        "price": "Price",
+        "price_low_to_high": "Price: Low to High",
+        "price_high_to_low": "Price: High to Low",
+        "search-product": "Search product"
+    },
+    "aside": {
+        "price_max": "Price-max",
+        "price_min": "Price-min",
+        "price": "Price",
+        "apply": "Apply",
+        "search": "Search"
+    },
+    "changePass": {
+        "changePassword": "Change Password",
+        "manageProfile": "Manage profile information to secure your account",
+        "oldPassword": "Old Password",
+        "oldPasswordRequired": "Old password is required",
+        "newPassword": "New Password",
+        "newPasswordRequired": "New password is required",
+        "newPasswordMinLength": "New password must be at least 8 characters",
+        "confirmPassword": "Confirm Password",
+        "confirmPasswordRequired": "Confirm password is required",
+        "passwordsDoNotMatch": "Confirm password does not match",
+        "save": "Save",
+        "passwordUpdatedSuccessfully": "Password updated successfully",
+        "incorrectOldPassword": "The old password you entered is incorrect.",
+        "errorChangingPassword": "Error changing password: "
+    },
+    "category": {
+        "clothes": "Clothes",
+        "electronics": "Electronics",
+        "furniture": "Furniture",
+        "shoes": "Shoes",
+        "miscellaneous": "Miscellaneous",
+        "foods": "Foods"
+    },
+    "detailP": {
+        "description": "Product Description",
+        "addToCart": "Add to cart",
+        "buyNow": "Buy now",
+        "amount": "138 products available",
+        "Amount": "Amount",
+        "login": "Please log in to add products to cart!",
+        "setAmount": "Cannot add more than 138 products to the cart."
+    },
+    "cart": {
+        "select_all": "Select all",
+        "delete": "Delete",
+        "total_payment": "Total payment",
+        "products": "products",
+        "buy": "Buy",
+        "unit_price": "Unit price",
+        "quantity": "Quantity",
+        "amount": "Amount",
+        "action": "Action",
+        "product": "Product"
+    },
+    "sell": {
+        "sellerChannel": "Seller Channel",
+        "becomeASeller": "Become a Shopee Seller",
+        "downloadApp": "Download App",
+        "connect": "Connect"
+    },
+    "app": {
+        "healthProtection": "Health Protection",
+        "cheapStuff": "Everything Cheap - Buy is Freeship",
+        "saleTimeFrame": "Sale Hunting Time Frame",
+        "freeDelivery": "Free Delivery",
+        "cashback": "20% Cashback - Up to 50K",
+        "brandDiscount": "50% Off Branded Items",
+        "internationalItems": "International Items",
+        "serviceCardTopup": "Service Card Top-up",
+        "shockingDeal": "Shocking Deals From 1K"
+    }
+}

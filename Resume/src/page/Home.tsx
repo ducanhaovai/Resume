@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/CSS/home.css";
+import anh from "../assets/anh.jpg";
 
 export default function Home() {
   const [profession, setProfession] = useState("");
@@ -42,7 +43,7 @@ export default function Home() {
   }, [profession, professionIndex, charIndex, deleting]);
 
   return (
-    <section className="home section active" id="home">
+    <section className="home active section" id="home">
       <div className="container">
         <div className="row">
           <div className="home-info padd-15">
@@ -59,7 +60,7 @@ export default function Home() {
             <a className="btn about-me-btn">More About me</a>
           </div>
           <div className="home-img padd-15">
-            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/427903335_1829021274204923_175487406268511103_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeESftcxKFJNwwfZmMePq-FD7DCwFDWW6mHsMLAUNZbqYTA_XvtNkF7d13iLcChRNSNyqTF4Rmzytf9hFWnbyceA&_nc_ohc=8E8HHs98R1wQ7kNvgFXKkwN&_nc_ht=scontent.fhan2-4.fna&oh=00_AfAsxKqeG0gbO97RansQJOdyNgqW8pJkXSAm85GI5Xi-1w&oe=66356DEB"></img>
+            <img src={anh}></img>
           </div>
         </div>
       </div>

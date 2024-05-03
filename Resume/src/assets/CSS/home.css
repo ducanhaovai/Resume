@@ -18,8 +18,30 @@
 .home {
     min-height: 100vh;
     display: flex;
-    color: #f2f2fc;
+
 }
+
+.section.active {
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+.section.back-section {
+    z-index: 1;
+}
+
+@keyframes slideSection {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
 
 .section .container {
     padding-top: 60px;
@@ -29,7 +51,7 @@
 .container {
     max-width: 1100px;
     width: 100%;
-    margin: auto;
+    margin: 50px;
 }
 
 .row {
@@ -53,6 +75,8 @@
 h3.hello {
     font-size: 28px;
     margin: 15px 0;
+    display: flex;
+    align-items: center;
 }
 
 h3.hello span {
@@ -63,14 +87,7 @@ h3.hello span {
     padding-left: 6px;
 }
 
-p {
-    color: black;
-}
 
-.hello {
-    display: flex;
-    align-items: center;
-}
 
 .my-profession {
     display: flex;
@@ -127,6 +144,8 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
+
+
 .btn:hover {
     transform: scale(1.05);
 }
@@ -160,19 +179,13 @@ h3.my-profession {
     position: relative;
 }
 
-.padd-15 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .home .home-img img {
-    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+    width: 300px;
 
-    max-width: 300px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
 }
-
 
 
 .home .home-img img:hover {

@@ -62,11 +62,6 @@
     right: 0;
 }
 
-::before,
-::after {
-    box-sizing: border-box;
-}
-
 .aside .nav {
     margin-top: 50px;
 }

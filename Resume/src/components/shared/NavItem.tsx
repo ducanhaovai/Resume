@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function NavItem() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeSection, setActiveSection] = useState("Home");
   const navItems = ["Home", "About", "Service", "Project", "Contact"];
   const navIcons = [
     "fa-house",
@@ -12,13 +11,31 @@ export default function NavItem() {
     "fa-phone",
   ];
 
+  // Function to handle click on a navigation item
+  const handleNavClick = (item: string) => {
+    const prevActiveSection = document.querySelector(
+      `.${activeSection.toLowerCase()}`
+    );
+    if (prevActiveSection) {
+      prevActiveSection.classList.remove("active");
+      prevActiveSection.classList.add("back-section");
+    }
+
+    setActiveSection(item);
+    const newActiveSection = document.querySelector(`.${item.toLowerCase()}`);
+    if (newActiveSection) {
+      newActiveSection.classList.remove("back-section");
+      newActiveSection.classList.add("active");
+    }
+  };
+
   return (
     <ul className="nav">
       {navItems.map((item, index) => (
         <li key={index}>
           <a
-            className={index === activeIndex ? "active" : ""}
-            onClick={() => setActiveIndex(index)}
+            className={item === activeSection ? "active" : ""}
+            onClick={() => handleNavClick(item)}
           >
             <i className={`fa-solid ${navIcons[index]}`}></i>
             <p>{item}</p>

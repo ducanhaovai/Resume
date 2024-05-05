@@ -1,5 +1,9 @@
 import "../assets/CSS/abuot.css";
+import Education from "../components/shared/Education";
 import Infor from "../components/shared/Infor";
+import Project from "../components/shared/Project";
+import Skill from "../components/shared/Skill";
+
 export default function About() {
   return (
     <section className="about section">
@@ -27,8 +31,12 @@ export default function About() {
             </div>
             <div className="row">
               <Infor />
+              <Skill />
             </div>
-            <div className="row"></div>
+            <div className="row" id="education">
+              <Education />
+              <Project />
+            </div>
           </div>
         </div>
       </div>

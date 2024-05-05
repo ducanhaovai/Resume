@@ -11,7 +11,7 @@ export default function NavItem() {
     "fa-phone",
   ];
 
-  // Function to handle click on a navigation item
+
   const handleNavClick = (item: string) => {
     const prevActiveSection = document.querySelector(
       `.${activeSection.toLowerCase()}`

@@ -88,3 +88,156 @@
     margin-right: 15px;
     margin-top: 10px;
 }
+
+.about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    align-items: baseline;
+    display: flex;
+}
+
+.about .about-content .skills .skill-item p {
+    padding-left: 10px;
+}
+
+.about .about-content .skills .skill-item .fa-html5 {
+    color: #e5532d;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.about .about-content .skills .skill-item .fa-css3-alt {
+    color: #2d53e5;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.about .about-content .skills .skill-item .fa-js {
+    color: #d0ab13;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.about .about-content .skills .skill-item .fa-react {
+    color: #66dbfb;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #302e4d;
+    padding-left: 5px;
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content h3.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    position: relative;
+}
+
+.shadow-dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: #ec1839;
+}
+
+.about .about-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #ec1839;
+}
+
+.about .about-content .timeline .timeline-date {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #504e70;
+    display: flex;
+    align-items: baseline;
+}
+
+.about .about-content .timeline .timeline-date p {
+    padding-left: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: #504e70;
+}
+
+.about .about-content .timeline a {
+
+    display: block;
+}
+
+#education {
+    padding-top: 60px;
+}

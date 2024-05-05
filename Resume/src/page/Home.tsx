@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../assets/CSS/home.css";
 import anh from "../assets/anh.jpg";
 
@@ -7,7 +7,7 @@ export default function Home() {
   const [professionIndex, setProfessionIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
-  const professions = [" Web Developer", " DevOps Engineer", " Clouds"];
+  const professions = [" Web Developer", "Intern Front-End", "T1 con"];
 
   useEffect(() => {
     const timeoutId = setTimeout(
@@ -60,7 +60,10 @@ export default function Home() {
             <a className="btn about-me-btn">More About me</a>
           </div>
           <div className="home-img padd-15">
-            <img src={anh}></img>
+            <div className="img-wrapper">
+              <img src={anh} alt="Original"></img>
+              <div className="flip-img"></div>
+            </div>
           </div>
         </div>
       </div>

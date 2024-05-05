@@ -22,3 +22,13 @@ body {
 ::after {
   box-sizing: border-box;
 }
+
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+.section.back-section {
+  z-index: 1;
+}

@@ -1,49 +1,46 @@
-import React from "react";
 import "../../assets/CSS/abuot.css";
 
 export default function Infor() {
+  const infos = [
+    { label: "Birthday", value: "03 March 2003" },
+    { label: "Age", value: "21" },
+    {
+      label: "Email",
+      value: "ducanhmai916@gmail.com",
+      link: "mailto:ducanhmai916@gmail.com",
+    },
+    {
+      label: "Facebook",
+      value: "Duc Anh Mai",
+      link: "https://www.facebook.com/ducanhcutehihi",
+    },
+    { label: "City", value: "Ha Noi - Viet Nam" },
+    { label: "Website", value: "Will be add later" },
+    { label: "Website", value: "Will be add later" },
+  ];
+
   return (
     <div className="personal-info padd-15">
       <div className="row">
-        <div className="info-item padd-15">
-          <p>
-            Birthday: <span>03 March 2003</span>
-          </p>
-        </div>
-        <div className="info-item padd-15">
-          <p>
-            Age:<span>21</span>
-          </p>
-        </div>
-        <div className="info-item padd-15">
-          <p>
-            Email:
-            <span>
-              <a href="mailto:ducanhmai916@gmail.com">ducanhmai916@gmail.com</a>
-            </span>
-          </p>
-        </div>
-        <div className="info-item padd-15">
-          <p>
-            Facebook:
-            <span>
-              <a href="https://www.facebook.com/ducanhcutehihi" target="_blank">
-                Duc Anh Mai
-              </a>
-            </span>
-          </p>
-        </div>
-        <div className="info-item padd-15">
-          <p>
-            City: <span>Ha Noi - Viet Nam</span>
-          </p>
-        </div>
-
-        <div className="info-item padd-15">
-          <p>
-            Website: <span>None</span>
-          </p>
-        </div>
+        {infos.map((info, index) => (
+          <div className="info-item padd-15" key={index}>
+            <p>
+              {info.label}:{" "}
+              <span>
+                {info.link ? (
+                  <a
+                    href={info.link}
+                    target={info.label === "Facebook" ? "_blank" : ""}
+                  >
+                    {info.value}
+                  </a>
+                ) : (
+                  info.value
+                )}
+              </span>
+            </p>
+          </div>
+        ))}
       </div>
       <div className="row">
         <div className="buttons">

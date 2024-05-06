@@ -55,17 +55,27 @@ export default function Project() {
               </h3>
               <h4 className="timeline-title">TIC-TAC-TOE</h4>
               <p className="timeline-text">
-                - This website is based on the shopee page and rewritten based
-                on that page.
+                - Design website layout using Figma with React
               </p>
               <p className="timeline-text">
-                - Product data is called by api. structure used using RestAPIAll
-                product data is called using Rest api.
+                - Technology used: React, HTML, CSS, Git, Figma.
               </p>
-              <p className="timeline-text">
-                - Related functions are all used using nodejs. Data such as
-                login and registration are saved in MongoDB.
-              </p>
+
+              <a
+                href="https://shopping-clone.site"
+                className="timeline-text"
+                target="_blank"
+              >
+                - Link website: https://shopping-clone.site.
+              </a>
+              <a
+                href="https://github.com/ducanhaovai/Shopping-React.git"
+                target="_blank"
+                className="timeline-text"
+              >
+                - Link github:
+                https://github.com/ducanhaovai/Shopping-React.git.
+              </a>
             </div>
           </div>
         </div>

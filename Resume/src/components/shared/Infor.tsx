@@ -16,7 +16,6 @@ export default function Infor() {
     },
     { label: "City", value: "Ha Noi - Viet Nam" },
     { label: "Website", value: "Will be add later" },
-    { label: "Website", value: "Will be add later" },
   ];
 
   return (

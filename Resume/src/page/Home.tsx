@@ -8,6 +8,7 @@ export default function Home() {
   const [charIndex, setCharIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
   const professions = [" Web Developer", "Intern Front-End", "T1 con"];
+  
 
   useEffect(() => {
     const timeoutId = setTimeout(
@@ -56,9 +57,16 @@ export default function Home() {
               <span className="typing">{profession}</span>
               <span className="typed-cursor">|</span>
             </h3>
-            <p className="des">Why fall in love when you can fall asleep!</p>
+            <p className="des">
+              My name is Mai Duc Anh, a final-year student majoring in
+              Information technology whose goal is to be Frontend intern in a
+              professional work environment, aiming to accumlate experience in
+              business and create seft-value in Frontend.
+            </p>
+
             <a className="btn about-me-btn">More About me</a>
           </div>
+
           <div className="home-img padd-15">
             <div className="img-wrapper">
               <img src={anh} alt="Original"></img>

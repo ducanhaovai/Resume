@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import Mainlayout from "./components/layouts/Mainlayout";
 import About from "./page/About";
+import Service from "./page/Service";
+import Contact from "./page/Contact";
 
 const AppRouter = () => {
   return (
@@ -19,7 +21,9 @@ const AppRouter = () => {
         element={
           <Mainlayout>
             <Home />
-            <About  />
+            <About />
+            <Service />
+            <Contact />
           </Mainlayout>
         }
       />
@@ -27,7 +31,7 @@ const AppRouter = () => {
         path="/abuot"
         element={
           <Mainlayout>
-            <About/>
+            <About />
           </Mainlayout>
         }
       />

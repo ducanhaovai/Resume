@@ -1,38 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .aside {
-    width: 270px;
-    background: #fdf9ff;
+    width: 300px;
+    background:
+        #040b14;
     position: fixed;
     left: 0;
     top: 0;
-    padding: 30px;
     height: 100%;
     border-right: 1px solid #e8dfec;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     z-index: 10;
     transition: all 0.3s ease;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
-.aside .logo {
-    position: absolute;
-    top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
-}
 
-.aside .logo a {
-    color: #302e4d;
-    font-weight: 700;
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
+.aside .logo .name {
+
+    font-size: 24px;
     position: relative;
+    color: #fff8f1;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .aside .logo a span {
@@ -40,30 +37,10 @@
     font-family: 40px;
 }
 
-.aside .logo a::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid #ec1839;
-    border-left: 5px solid #ec1839;
-    bottom: 0;
-    left: 0;
-}
 
-.aside .logo a::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid #ec1839;
-    border-right: 5px solid #ec1839;
-    top: 0;
-    right: 0;
-}
+.nav-menu {
+    padding: 30px 0 0 0;
 
-.aside .nav {
-    margin-top: 50px;
 }
 
 ul {
@@ -75,21 +52,92 @@ ul {
     display: block;
 }
 
-.aside .nav li a {
+.nav li a {
     font-size: 16px;
     font-weight: 600;
 
-    border-bottom: 1px solid #e8dfec;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 15px;
+    color: #a8a9b4;
+    transition: color 0.3s ease;
+
 }
 
-.aside .nav li a.active {
-    color: #ec1839;
+.nav li a:focus,
+.nav li a:hover,
+.nav li a.active {
+    color: #1395cc;
+    text-decoration: none;
+
 }
 
 .aside .nav li a i {
     margin-right: 15px;
+}
+
+
+.aside .logo .avatar-img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    height: 140px;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.aside .logo .social-links .facebook,
+.twitter,
+.instagram,
+.skype {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 6px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.bx {
+    font-family: boxicons;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+
+}
+
+.aside .logo .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+a {
+    color: #149ddd;
+    text-decoration: none;
+}
+
+.aside .logo .social-links {
+    text-align: center;
+    margin-top: 1rem;
 }

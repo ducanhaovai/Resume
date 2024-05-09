@@ -10,7 +10,7 @@ export default function About() {
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
-            <h2>Abuot Me</h2>
+            <h2>About Me</h2>
           </div>
         </div>
         <div className="row">

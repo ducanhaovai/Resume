@@ -78,13 +78,15 @@ h3.hello {
     margin: 15px 0;
     display: flex;
     align-items: center;
+    color:
+        #fff8f1;
 }
 
 h3.hello span {
-    font-family: 'Clicker Script', cursive;
+
     font-size: 30px;
     font-family: 700;
-    color: #ec1839;
+    color: #fff8f1;
     padding-left: 6px;
 }
 
@@ -100,10 +102,14 @@ h3.hello span {
 h3.my-profession {
     font-size: 30px;
     margin: 15px 0;
+    color:
+        #fff8f1;
+    padding-left: 10px;
 }
 
 .typing {
-    color: #ec1839;
+    color:
+        #fff8f1;
     padding-left: 5px;
 }
 
@@ -128,8 +134,10 @@ h3.my-profession {
 
 .des {
 
+    padding-left: 20px;
     font-size: 20px;
-    color: #504e70;
+    color:
+        #fff8f1;
     padding-bottom: 20px;
 }
 
@@ -175,8 +183,8 @@ h3.my-profession {
     position: absolute;
     height: 80px;
     width: 80px;
-    border-top: 10px solid #ec1839;
-    border-left: 10px solid #ec1839;
+    border-top: 10px solid #ade8f4;
+    border-left: 10px solid #ade8f4;
     left: 20px;
     top: -40px;
 }
@@ -186,8 +194,8 @@ h3.my-profession {
     position: absolute;
     height: 80px;
     width: 80px;
-    border-bottom: 10px solid #ec1839;
-    border-right: 10px solid #ec1839;
+    border-bottom: 10px solid #ade8f4;
+    border-right: 10px solid #ade8f4;
     right: 20px;
     bottom: -40px;
 }
@@ -290,4 +298,11 @@ div #clock:hover {
     font-weight: 200;
     letter-spacing: 0.4em;
 
+}
+
+#hero {
+
+    height: 100vh;
+    background: url(../109672.jpg) top center;
+    background-size: cover;
 }

@@ -1,6 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function NavItem() {
+interface NavItemProps {
+  onNavItemClick: (index: number) => void;
+}
+
+export default function NavItem({ onNavItemClick }: NavItemProps) {
   const [activeSection, setActiveSection] = useState("Home");
   const navItems = ["Home", "About", "Service", "Contact", "Portfolio"];
   const navIcons = [
@@ -11,7 +15,7 @@ export default function NavItem() {
     "fa-suitcase",
   ];
 
-  const handleNavClick = (item: string) => {
+  const handleNavClick = (item: string, index: number) => {
     const prevActiveSection = document.querySelector(
       `.${activeSection.toLowerCase()}`
     );
@@ -26,6 +30,9 @@ export default function NavItem() {
       newActiveSection.classList.remove("back-section");
       newActiveSection.classList.add("active");
     }
+
+    // Call the provided callback with the index
+    onNavItemClick(index);
   };
 
   return (
@@ -34,7 +41,7 @@ export default function NavItem() {
         <li key={index}>
           <a
             className={item === activeSection ? "active" : ""}
-            onClick={() => handleNavClick(item)}
+            onClick={() => handleNavClick(item, index)}
           >
             <i className={`fa-solid ${navIcons[index]}`}></i>
             <p>{item}</p>

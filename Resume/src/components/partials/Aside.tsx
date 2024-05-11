@@ -1,13 +1,33 @@
+import React, { useState } from "react";
 import "../../assets/CSS/aside.css";
 import NavItem from "../shared/NavItem";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import anhdaidien from "../../assets/anhdaidien.jpg";
 
 export default function Aside() {
+  const [isAsideOpen, setIsAsideOpen] = useState(false);
+
+  const toggleAside = () => {
+    setIsAsideOpen(!isAsideOpen);
+    toggleSections();
+  };
+
+  const toggleSections = () => {
+    const allSections = document.querySelectorAll(".section");
+    allSections.forEach((section) => {
+      section.classList.toggle("open");
+    });
+  };
+  const handleNavItemClick = () => {
+    // Close the aside menu
+    setIsAsideOpen(false);
+    toggleSections();
+  };
+
   return (
-    <div className="aside">
+    <div className={`aside ${isAsideOpen ? "open" : ""}`}>
       <div className="logo">
-        <img src={anhdaidien} className="avatar-img" />
+        <img src={anhdaidien} className="avatar-img" alt="Avatar" />
         <h1 className="name">
           <span>Anh </span>
           Mai
@@ -27,8 +47,11 @@ export default function Aside() {
           </a>
         </div>
       </div>
+      <div className="nav-toggler" onClick={toggleAside}>
+        <span></span>
+      </div>
       <nav className="nav-menu navbar" id="navbar">
-        <NavItem />
+        <NavItem onNavItemClick={handleNavItemClick} />
       </nav>
     </div>
   );

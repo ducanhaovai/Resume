@@ -19,8 +19,8 @@ export default function Project() {
                 on that page.
               </p>
               <p className="timeline-text">
-                - Product data is called by api. structure used using RestAPIAll
-                product data is called using Rest api.
+                - Product data is called by api. structure used using RestAPI,
+                all product data is called using Rest api.
               </p>
               <p className="timeline-text">
                 - Related functions are all used using nodejs. Data such as

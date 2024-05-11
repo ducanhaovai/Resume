@@ -52,7 +52,10 @@
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    transition: padding-left 0.3s ease;
+
 }
+
 
 #contact {
     display: flex;
@@ -366,4 +369,39 @@ div #clock:hover {
     height: 100vh;
     background: url(../109672.jpg) top center;
     background-size: cover;
+}
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home .home-info,
+    .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
 }

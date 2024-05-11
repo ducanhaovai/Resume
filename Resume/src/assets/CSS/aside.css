@@ -3,20 +3,20 @@
 
 .aside {
     width: 300px;
-    background:
-        #040b14;
+    background: #040b14;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     border-right: 1px solid #e8dfec;
     display: flex;
-
-    z-index: 10;
-    transition: all 0.3s ease;
+    z-index: 1000;
     flex-direction: column;
     overflow-y: auto;
+    transition: all 0.3s ease;
+   
 }
+
 
 
 .aside .logo .name {
@@ -140,4 +140,68 @@ a {
 .aside .logo .social-links {
     text-align: center;
     margin-top: 1rem;
+}
+
+.aside.show {
+
+    transform: translateX(0);
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+}
+
+.aside .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: #ec1839;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: #ec1839;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid #e8dfec;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: #fdf9ff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: #ec1839;
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler.open span {
+    background-color: transparent;
 }

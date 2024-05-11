@@ -4,6 +4,7 @@ import Mainlayout from "./components/layouts/Mainlayout";
 import About from "./page/About";
 import Service from "./page/Service";
 import Contact from "./page/Contact";
+import Portfolio from "./page/Portfolio";
 
 const AppRouter = () => {
   return (
@@ -24,6 +25,7 @@ const AppRouter = () => {
             <About />
             <Service />
             <Contact />
+            <Portfolio />
           </Mainlayout>
         }
       />

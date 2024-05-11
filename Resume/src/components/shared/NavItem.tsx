@@ -2,8 +2,14 @@ import { useState } from "react";
 
 export default function NavItem() {
   const [activeSection, setActiveSection] = useState("Home");
-  const navItems = ["Home", "About", "Service", "Contact"];
-  const navIcons = ["fa-house", "fa-user", "fa-briefcase", "fa-phone"];
+  const navItems = ["Home", "About", "Service", "Contact", "Portfolio"];
+  const navIcons = [
+    "fa-house",
+    "fa-user",
+    "fa-briefcase",
+    "fa-phone",
+    "fa-suitcase",
+  ];
 
   const handleNavClick = (item: string) => {
     const prevActiveSection = document.querySelector(

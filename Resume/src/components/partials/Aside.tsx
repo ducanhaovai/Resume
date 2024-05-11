@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../assets/CSS/aside.css";
 import NavItem from "../shared/NavItem";
 import "@fortawesome/fontawesome-free/css/all.min.css";

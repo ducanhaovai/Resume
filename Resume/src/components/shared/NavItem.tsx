@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface NavItemProps {
   onNavItemClick: (index: number) => void;

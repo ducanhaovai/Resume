@@ -68,9 +68,7 @@ export default function Home() {
           <div className="home-img padd-15">
             <div className="img-wrapper">
               <img src={anh} alt="Original"></img>
-              <div className="flip-img">
-                <source src="your-video-file.mp4" type="video/mp4" />
-              </div>
+              <div className="flip-img"></div>
             </div>
           </div>
         </div>

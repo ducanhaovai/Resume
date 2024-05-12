@@ -62,19 +62,18 @@ export default function Project() {
               </p>
 
               <a
-                href="https://shopping-clone.site"
+                href="https://tic-tac-toe-react-peach-ten.vercel.app/"
                 className="timeline-text"
                 target="_blank"
               >
-                - Link website: https://shopping-clone.site.
+                - Link website: https://tic-tac-toe-react-peach-ten.vercel.app/.
               </a>
               <a
-                href="https://github.com/ducanhaovai/Shopping-React.git"
+                href="https://github.com/ducanhaovai/Resume"
                 target="_blank"
                 className="timeline-text"
               >
-                - Link github:
-                https://github.com/ducanhaovai/Shopping-React.git.
+                - Link github: https://github.com/ducanhaovai/Resume.
               </a>
             </div>
           </div>

@@ -49,25 +49,18 @@ export default function Home() {
           <div className="home-info padd-15">
             <h3 className="hello">
               <p>Hello, my name is </p>
-              <span className="name">Mai Duc Anh</span>
+              <span className="name">Duc Anh</span>
             </h3>
             <h3 className="my-profession">
               <p>I'm a </p>
               <span className="typing">{profession}</span>
               <span className="typed-cursor">|</span>
             </h3>
-
-            <p className="des">
-              My name is Mai Duc Anh, a final-year student majoring in
-              Information technology whose goal is to be Frontend intern in a
-              professional work environment, aiming to accumlate experience in
-              business and create seft-value in Frontend.
-            </p>
           </div>
 
           <div className="home-img padd-15">
             <div className="img-wrapper">
-              <img src={anh} alt="Original"></img>
+              <img src={anh} alt="Original" loading="lazy"></img>
               <div className="flip-img"></div>
             </div>
           </div>

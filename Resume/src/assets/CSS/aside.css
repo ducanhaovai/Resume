@@ -8,14 +8,36 @@
     left: 0;
     top: 0;
     height: 100%;
-    border-right: 1px solid #e8dfec;
     display: flex;
     z-index: 1000;
     flex-direction: column;
     overflow-y: auto;
     transition: all 0.3s ease;
-   
+
 }
+
+.aside::-webkit-scrollbar {
+    width: 6px;
+
+
+}
+
+.aside::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar-thumb {
+    background-color: #000000;
+
+
+}
+
+.aside::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Thumb color on hover */
+}
+
 
 
 
@@ -82,7 +104,6 @@ ul {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #2c2f3f;
     border-radius: 50%;
     max-width: 100%;
     height: auto;

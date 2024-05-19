@@ -1,4 +1,4 @@
-.section-title {
+.section.open.about .about-content .timeline .timeline-text.section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
@@ -12,6 +12,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    margin-bottom: 100px;
 }
 
 .section-title h2::after {
@@ -23,6 +24,7 @@
     top: 100%;
     left: 0;
     margin-top: 8px;
+
 }
 
 .section-title h2 {
@@ -30,6 +32,7 @@
     color: #302e4d;
     font-weight: 700;
     position: relative;
+
 }
 
 .about .about-content {
@@ -46,6 +49,7 @@
     margin-bottom: 15px;
     font-weight: 700;
     color: #302e4d;
+    
 }
 
 .about .about-content .about-text {
@@ -229,7 +233,7 @@
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
-    text-align: justify;
+    word-wrap: break-word;
     color: #504e70;
 }
 

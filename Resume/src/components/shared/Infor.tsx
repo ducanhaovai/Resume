@@ -1,6 +1,21 @@
+import React, { useState } from "react";
 import "../../assets/CSS/abuot.css";
 
 export default function Infor() {
+  const [, setActiveSection] = useState("about");
+
+  const handleContactClick = () => {
+    setActiveSection("contact");
+    const aboutSection = document.querySelector(".about");
+    const contactSection = document.querySelector(".contact");
+    if (aboutSection) {
+      aboutSection.classList.remove("active");
+      aboutSection.classList.add("back-section");
+      contactSection?.classList.add("active");
+      contactSection?.classList.remove("back-section");
+    }
+  };
+
   const infos = [
     { label: "Birthday", value: "03 March 2003" },
     { label: "Age", value: "21" },
@@ -43,10 +58,11 @@ export default function Infor() {
       </div>
       <div className="row">
         <div className="buttons">
-          <a href="" className="btn">
-            Download My CV
+          <a href="https://www.cakeresume.com/duc-anh-mai" className="btn">
+            See My CV
           </a>
-          <p data-section-index="1" className="btn hire-me">
+
+          <p onClick={handleContactClick} className="btn hire-me">
             Contact Me
           </p>
         </div>

@@ -6,32 +6,37 @@ interface NavItemProps {
 
 export default function NavItem({ onNavItemClick }: NavItemProps) {
   const [activeSection, setActiveSection] = useState("Home");
-  const navItems = ["Home", "About", "Service", "Contact", "Portfolio"];
+  const navItems = [
+    "Home",
+    "About",
+    "Service",
+    "Contact",
+    "Portfolio",
+    "Weather",
+  ];
   const navIcons = [
     "fa-house",
     "fa-user",
     "fa-briefcase",
     "fa-phone",
     "fa-suitcase",
+    "fa-sun",
   ];
 
   const handleNavClick = (item: string, index: number) => {
-    const prevActiveSection = document.querySelector(
-      `.${activeSection.toLowerCase()}`
-    );
-    if (prevActiveSection) {
-      prevActiveSection.classList.remove("active");
-      prevActiveSection.classList.add("back-section");
-    }
+    // Remove "active" class from all sections except the selected one
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((section) => {
+      if (section.classList.contains(item.toLowerCase())) {
+        section.classList.remove("back-section");
+        section.classList.add("active");
+      } else {
+        section.classList.remove("active");
+        section.classList.add("back-section");
+      }
+    });
 
     setActiveSection(item);
-    const newActiveSection = document.querySelector(`.${item.toLowerCase()}`);
-    if (newActiveSection) {
-      newActiveSection.classList.remove("back-section");
-      newActiveSection.classList.add("active");
-    }
-
-    // Call the provided callback with the index
     onNavItemClick(index);
   };
 

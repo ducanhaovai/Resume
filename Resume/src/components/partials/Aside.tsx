@@ -19,7 +19,7 @@ export default function Aside() {
     });
   };
   const handleNavItemClick = () => {
-    // Close the aside menu
+
     setIsAsideOpen(false);
     toggleSections();
   };

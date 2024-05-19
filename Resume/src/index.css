@@ -61,10 +61,6 @@ body {
     position: fixed;
   }
 
-  .section.open {
-    left: 270px;
-  }
-
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;

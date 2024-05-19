@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../assets/CSS/abuot.css";
 
 export default function Infor() {

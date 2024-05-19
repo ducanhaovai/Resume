@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "../assets/CSS/weather.css";
 
 const Weather: React.FC = () => {
-  const [currCity, setCurrCity] = useState("Ha Noi");
-  const [units, setUnits] = useState("metric");
+  const [currCity] = useState("Ha Noi");
+  const [units] = useState("metric");
 
   const getWeather = () => {
     const API_KEY = "64f60853740a1ee3ba20d0fb595c97d5";
